@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/fav_icon.png", type="images/png" > 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soham Vision Academy</title>
+  <style>
+    @keyframes scrollBanner {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  
+    .animate-scrollBanner {
+      animation: scrollBanner 25s linear infinite;
+    }
+
+    /* New animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s infinite;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icon:hover {
+      transform: scale(1.2);
+      color: #ed532c;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ed532c',
+            secondary: '#d25d41',
+            tertiary: '#fdd7c7'
+          }
+        }
+      }
+    }
+  </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navigation -->
+  <nav class="bg-primary text-white p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="images/logo.JPG" alt="Ekveera Groups Logo" class="h-12 w-auto rounded-lg">
+        </a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Nav Links (Desktop) -->
+      <div id="menu" class="hidden md:flex space-x-6 text-lg">
+        <a href="index.html" class="hover:text-tertiary">Home</a>
+        <a href="#about" class="hover:text-tertiary">About us</a>
+        <a href="sva_courses.html" class="hover:text-tertiary">Courses</a>
+        <a href="#team" class="hover:text-tertiary">Team</a>
+        <a href="#contact" class="hover:text-tertiary">Contact us</a>
+      </div>
+    </div>
+
+    <!-- Nav Links (Mobile) -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 px-2">
+      <a href="index.html" class="block hover:text-tertiary">Home</a>
+      <a href="#about" class="block hover:text-tertiary">About us</a>
+      <a href="sva_courses.html" class="block hover:text-tertiary">Courses</a>
+      <a href="#team" class="block hover:text-tertiary">Team</a>
+      <a href="#contact" class="block hover:text-tertiary">Contact us</a>
+    </div>
+  </nav>
+
+  <!-- Continuous Scrolling Banner -->
+  <div class="relative w-full h-64 overflow-hidden">
+    <!-- Images -->
+
+  <img src="images/sva/anil_2.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/java_1.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/dca_5.jpg" class="fade-image absolute inset-0 w-full h-full lg:h-[500px] object-cover opacity-0 transition-opacity duration-1000" /> 
+  <img src="images/sva/autocad_4.jpg" class="fade-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/autocad_2.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/rajesh_1.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/jaleel_2.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/chandu_1.jpg" class="fade-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/dca_4.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/anil_3.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/student_presentation_edu.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/rajesh_4.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] lg:object-center h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/jaleel_3.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/autocad_1.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/basics_1.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/dca_1.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+  <img src="images/sva/dca_6.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="bg-tertiary py-16 rounded-bl-3xl rounded-br-3xl">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-primary mb-4">Soham Vision Academy</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">The place where learning meets excellence</p>
+    </div>
+  </section>
+
+  <div class="text-center py-10 bg-gray-50">
+    <a href="sva_courses.html" class="inline-block px-6 py-3 bg-primary text-white text-lg font-semibold rounded-full shadow-md hover:bg-primary-dark transition">
+      Explore Courses
+    </a>
+  </div>
+
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-50 py-16 text-gray-900">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="text-3xl font-bold text-primary text-left mb-10">About Us</h2>
+  
+        <!-- Card -->
+        <div class="bg-gray-50 rounded-2xl transition-all duration-300">
+          <p class="text-lg leading-relaxed text-left text-gray-800">At
+          <span class="text-primary font-semibold">Soham Vision Academy</span> we believe in turning vision into reality. With a strong foundation and a passion for skill development, Soham Vision Academy has become a trusted destination for Engineering, Non-Engineering, School and College students seeking software training, internships, and job-oriented courses.
+          </p>
+        </div>
+        
+        <h3 class="text-primary font-semibold text-2xl py-6">Why Choose SV ACADEMY ?</h3>
+
+        <!-- Speacialities -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+          <!-- Feature 1 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/graduating.svg" class="w-full h-full object-cover"/>
+            </div>
+            <h4 class="text-xl font-semibold mb-2">1000+ Students</h4>
+            <p class="text-gray-600 text-sm">Successfully trained and transformed</p>
+          </div>
+   
+          <!-- Feature 2 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/batches.svg" class="w-full h-full object-contain">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">63+ Batches</h4>
+            <p class="text-gray-600 text-sm">Completed in cutting-edge software training</p>
+          </div>
+   
+          <!-- Feature 3 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/internships.svg" class="w-full h-full object-cover">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">40+ Internship Programs</h4>
+            <p class="text-gray-600 text-sm">Conducted with real-time project experience</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/man-at-the-office.svg" class="w-full h-full object-cover">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">5+ Course Batches</h4>
+            <p class="text-gray-600 text-sm">Job-oriented course batches leading students toward employment</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/job-interview-in-the-office.svg" class="w-full h-full object-contain">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">14+ Students placed</h4>
+            <p class="text-gray-600 text-sm">In reputed companies across India</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/deal.svg" class="w-full h-full object-contain">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">5+ MOUs</h4>
+            <p class="text-gray-600 text-sm">Signed with institutions and industries</p>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/businessman-explaining-the-strategy.svg" class="w-full h-full object-contain">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">10+ Workshops</h4>
+            <p class="text-gray-600 text-sm">Conducted  for hands-on skill development</p>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/man-with-laptop.svg" class="w-full h-full object-cover">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">2+ Years</h4>
+            <p class="text-gray-600 text-sm">Excellence in skill-based training and career building</p>
+          </div>
+
+          <!-- Feature 9 -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition">
+            <div class="w-24 h-24 mx-auto mb-4">
+              <img src="images/illustrations/business-presentation.svg" class="w-full h-full object-contain">
+            </div>
+            <h4 class="text-xl font-semibold mb-2">10+ Years Experience</h4>
+            <p class="text-gray-600 text-sm">Expert trainers with industry & teaching experience</p>
+          </div>
+         
+         </div>
+
+      </div>
+    </section>
+  
+  
+  <!-- Advisory Committee Section -->
+  <section id="team" class="bg-gray-50 py-16 text-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-primary text-left mb-10">Advisory Committee</h2>
+      <ul class="space-y-4 text-lg text-gray-800">
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300">Sri R. Bharamaiah Chowdhary Garu, Retired R&B</li>
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300">Dr. Salauddin Mohammad Garu, Director R&D, BVRIT</li>
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300">Sri G. Laxman, IT</li>
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300">Sri B.V. Rathnam, Sr.Engineer</li>
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300">Sri Y Pawan Srivastava, CA</li>
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300">Sri Soda Narender, Advocate</li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Contact us section -->
+<section id="contact" class="bg-gray-50 py-16 text-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-primary mb-10">Contact Us</h2>
+
+    <!-- Infomation Cards -->
+    <div class="space-y-4">
+      <!-- Address -->
+       <a href="#maps_g">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">location_on</span>
+          <div>
+            <p class="font-semibold text-lg">Address</p>
+            <p class="text-sm text-gray-700">
+              2nd Floor, Jyothi Arcade, 7-168/7, above the Muthoot Finance,<br />
+              Ghatkesar, Telangana 501301
+            </p>
+          </div>
+        </div>
+       </a>
+
+      <!-- Email -->
+       <a href="mailto:ekveeragroups@gmail.com" class="block" target="_blank">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">email</span>
+          <div>
+            <p class="font-semibold text-lg">Email</p>
+            <p class="text-sm text-gray-700">ekveeragroups@gmail.com</p>
+          </div>
+        </div>
+       </a>
+
+      <!-- Phone -->
+       <a href="tel:+919939290303" class="block">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">phone</span>
+          <div>
+            <p class="font-semibold text-lg">Phone</p>
+            <p class="text-sm text-gray-700">+91 9939 29 0303</p>
+          </div>
+        </div>
+       </a>
+      
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/919939290303" target="_blank" class="block">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">message</span>
+          <div>
+            <p class="font-semibold text-lg">WhatsApp</p>
+            <p class="text-sm text-gray-700">+91 9939 29 0303</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Google Map -->
+    <div class="w-full h-72 rounded-2xl overflow-hidden shadow-lg mt-10" id="maps_g">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.546993033974!2d78.67968506956086!3d17.450714998965452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb766d5fd5089d%3A0x8ade150426e94856!2sS.V.%20ACADEMY!5e0!3m2!1sen!2sin!4v1744252357421!5m2!1sen!2sin"
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!--Social Media Handles-->
+  <div class="text-center mt-12">
+    <p class="text-lg font-medium text-gray-800 mb-4">Stay updated — follow us online</p>
+   <div class="flex justify-center space-x-6">
+     <!-- Instagram -->
+     <a href="https://www.instagram.com/s.v.academy_sohamvisionacademy" target="_blank" rel="noopener noreferrer">
+       <img src="images/icons/instagram.svg" alt="Instagram" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+
+     <!-- YouTube -->
+     <a href="https://www.youtube.com/@Soham_Vision_Academy" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons/youtube.svg" alt="YouTube" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+
+    <!-- Facebook -->
+     <a href="https://www.facebook.com/share/18puJSgvJr/" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons/facebook.svg" alt="Facebook" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+   </div>
+  </div>
+
+</section>
+
+  
+  <!-- Footer -->
+<footer class="bg-primary text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Logo & About -->
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Ekveera Groups</h2>
+        <p class="text-sm">
+          Training engineers. Designing dreams. Delivering quality construction.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-tertiary">About Us</a></li>
+          <li><a href="#team" class="hover:text-tertiary">Our Team</a></li>
+          <li><a href="#contact" class="hover:text-tertiary">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Contact</h3>
+        <ul class="text-sm space-y-2">
+          <li>📍 2nd Floor, Jyothi Arcade, 7-168/7, above the Muthoot Finance, Ghatkesar, Telangana 501301</li>
+          <li>📞 +91 9939 29 0303 / +91 96426 99 426</li>
+          <li>📧 ekveeragroups@gmail.com</li>
+          <li>💬 WhatsApp: +91 9939 29 0303</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Bottom bar -->
+    <div class="bg-secondary text-center py-4 text-sm">
+      © 2025 Ekveera Groups. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="sva.js"></script>
+</body>
+</html>

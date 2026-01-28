@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/fav_icon.png", type="images/png" > 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soham Vision Academy Courses</title>
+  <style>
+    @keyframes scrollBanner {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  
+    .animate-scrollBanner {
+      animation: scrollBanner 25s linear infinite;
+    }
+
+    /* New animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s infinite;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icon:hover {
+      transform: scale(1.2);
+      color: #ed532c;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ed532c',
+            secondary: '#d25d41',
+            tertiary: '#fdd7c7'
+          }
+        }
+      }
+    }
+  </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+  <nav class="bg-primary text-white p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="images/logo.JPG" alt="Ekveera Groups Logo" class="h-12 w-auto rounded-lg">
+        </a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Nav Links (Desktop) -->
+      <div id="menu" class="hidden md:flex space-x-6 text-lg">
+        <a href="index.html" class="hover:text-tertiary">Home</a>
+        <a href="sva.html" class="hover:text-tertiary">SV Academy</a>
+      </div>
+    </div>
+
+    <!-- Nav Links (Mobile) -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 px-2">
+      <a href="index.html" class="block hover:text-tertiary">Home</a>
+      <a href="sva.html" class="block hover:text-tertiary">SV Academy</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-tertiary py-16 rounded-bl-3xl rounded-br-3xl">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-primary mb-4">Soham Vision Academy Courses</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">The place where learning meets excellence</p>
+    </div>
+  </section>
+  
+
+   <!-- Courses Section -->
+   <section class="bg-gray-50 py-12" id="courses">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-primary mb-6">Courses</h3>
+      <div id="courses-accordion" class="space-y-4">
+        
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Architectural Design Courses (AUTOCAD)
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Architectural & Advanced CAD Course</p>
+            <p class="text-gray-700 py-2">RCC Structural Detailing Course</p>
+            <p class="text-gray-700 py-2">Industrial Steel Structure Detailing Course</p>
+            <p class="text-gray-700 py-2">Submission of Municipal Drawings PRE & DCR Course</p>
+            <p class="text-gray-700 py-2">Estimation of Building</p>
+            <p class="text-gray-700 py-2">CAD MEP Detailing Course</p>
+            <p class="text-gray-700 py-2">CAD Interior Work's Detailing Course</p>
+            <p class="text-gray-700 py-2">Survey Drawing Detailing</p>
+            <p class="text-gray-700 py-2">Highway Drawings</p>
+            <p class="text-gray-700 py-2">Bridge Detailing Course</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            BIM Modelling Courses (REVIT)
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">REVIT Architectural Course</p>
+            <p class="text-gray-700 py-2">REVIT Structural Course</p>
+            <p class="text-gray-700 py-2">REVIT MEP Course</p>
+            <p class="text-gray-700 py-2">3D BIM</p>
+            <p class="text-gray-700 py-2">Advanced BIM Modelling Course</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Modelling Software Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">ArchiCAD Software</p>
+            <p class="text-gray-700 py-2">3DS Max</p>
+            <p class="text-gray-700 py-2">3DS Max + V Ray Render</p>
+            <p class="text-gray-700 py-2">3DS Max + Corona Render</p>
+            <p class="text-gray-700 py-2">Google Sketchup</p>
+            <p class="text-gray-700 py-2">Google Sketchup + V Ray</p>
+            <p class="text-gray-700 py-2">Google Sketchup + Corona Render</p>
+            <p class="text-gray-700 py-2">REVIT - Escape</p>
+            <p class="text-gray-700 py-2">REVIT Lumion</p>
+            <p class="text-gray-700 py-2">Unreal Software</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Structural Design Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">STAAD PRO</p>
+            <p class="text-gray-700 py-2">ETABS</p>
+            <p class="text-gray-700 py-2">SAP 2000</p>
+            <p class="text-gray-700 py-2">SAFE</p>
+            <p class="text-gray-700 py-2">RCDC</p>
+            <p class="text-gray-700 py-2">CYPE</p>
+          </div>
+        </div>
+        
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Construction Training Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Quantity Surveying</p>
+            <p class="text-gray-700 py-2">RCC Detailing</p>
+            <p class="text-gray-700 py-2">Primavera</p>
+            <p class="text-gray-700 py-2">MS Project</p>
+            <p class="text-gray-700 py-2">CPM</p>
+            <p class="text-gray-700 py-2">Road Work</p>
+            <p class="text-gray-700 py-2">Cannel Work</p>
+            <p class="text-gray-700 py-2">Bridge Work</p>
+            <p class="text-gray-700 py-2">Surveying</p>
+            <p class="text-gray-700 py-2">Total Station</p>
+            <p class="text-gray-700 py-2">MX Roads</p>
+            <p class="text-gray-700 py-2">QA/QC</p>
+            <p class="text-gray-700 py-2">Advanced Construction Management Course</p>
+            <p class="text-gray-700 py-2">Microsoft Project Course</p>
+            <p class="text-gray-700 py-2">ERP Course</p>
+            <p class="text-gray-700 py-2">QE Pro Software</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Mechanical Engineering Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">CAD (Computer Aided Design)</p>
+            <p class="text-gray-700 py-2">CAM (Computer Aided Manufacturing)</p>
+            <p class="text-gray-700 py-2">CAE (Computer Aided Engineering)</p>
+            <p class="text-gray-700 py-2">FEA (Finite Element Analysis)</p>
+            <p class="text-gray-700 py-2">AUTO CAD MAYA</p>
+            <p class="text-gray-700 py-2">ABAQUS</p>
+            <p class="text-gray-700 py-2">MAT LAB</p>
+            <p class="text-gray-700 py-2">ANSYS</p>
+          </div>
+        </div>
+        
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Electrical Engineering Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Electrical CAD</p>
+            <p class="text-gray-700 py-2">MAT LAB</p>
+            <p class="text-gray-700 py-2">Simulink</p>
+            <p class="text-gray-700 py-2">ETAP</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Electrical Engineering Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Electrical CAD</p>
+            <p class="text-gray-700 py-2">MAT LAB</p>
+            <p class="text-gray-700 py-2">Simulink</p>
+            <p class="text-gray-700 py-2">ETAP</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Specialized Courses Offered by the Academy
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Vasthu for Construction and Interior</p>
+            <p class="text-gray-700 py-2">Internship on Site Engineering Management Course (Buildings)</p>
+            <p class="text-gray-700 py-2">Practical Interior Design and Management Course</p>
+            <p class="text-gray-700 py-2">Advanced Construction Management Course</p>
+            <p class="text-gray-700 py-2">Practical RCC Building Analysis and Design with Fundamental using STADD PRO & Spread Sheets</p>
+            <p class="text-gray-700 py-2">Practical Building Structural Analysis and Design Using STADD PRO & Spread Sheets</p>
+            <p class="text-gray-700 py-2">Practical RCC Building Analysis and Design with Fundamental using ETABS & Spread Sheets</p>
+            <p class="text-gray-700 py-2">Practical Road and Bridge Design & Analysis Course</p>
+            <p class="text-gray-700 py-2">Theory to Practical Geotechnical Course</p>
+            <p class="text-gray-700 py-2">Surveying of Buildings & Highways using Advanced Tools</p>
+            <p class="text-gray-700 py-2">Practical Quantity Survey Course (Building + Highways)</p>
+            <p class="text-gray-700 py-2">Tenders and Contract Management Course</p>
+            <p class="text-gray-700 py-2">Real Estate & Project Valuation  Course</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Programming Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Java Full Stact</p>
+            <p class="text-gray-700 py-2">Python Full Stack</p>
+            <p class="text-gray-700 py-2">Data Engineering</p>
+            <p class="text-gray-700 py-2">Scrum</p>
+            <p class="text-gray-700 py-2">C/C++</p>
+            <p class="text-gray-700 py-2">Fundamentals of Internet of Things</p>
+            <p class="text-gray-700 py-2">Fundamentals of Artificial Intelligence</p>
+          </div>
+        </div>
+
+        <!-- Course Item -->
+        <div class="course-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="course-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Diploma Courses
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="course-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">DCA (Diploma in Computer Applications)</p>
+            <p class="text-gray-700 py-2">ADCA (Advanced Diploma in Computer Applications)</p>
+            <p class="text-gray-700 py-2">PGDCA (Post Graduate in Diploma in Computer Applications)</p>
+            <p class="text-gray-700 py-2">DTP (Desktop Publishing)</p>
+            <p class="text-gray-700 py-2">Web Designing</p>
+            <p class="text-gray-700 py-2">Multimedia</p>
+            <p class="text-gray-700 py-2">Adobe Photoshop</p>
+            <p class="text-gray-700 py-2">Personality Development Skills</p>
+            <p class="text-gray-700 py-2">Spoken English with Interview Skills</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-6 mt-12 text-center">
+    <p>&copy; 2025 Soham Vision Academy. All rights reserved.</p>
+  </footer>
+<script src="sva.js"></script>
+</body>
+</html>

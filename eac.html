@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/fav_icon.png", type="images/png" > 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ekveera Architects & Constructions</title>
+  <style>
+    @keyframes scrollBanner {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  
+    .animate-scrollBanner {
+      animation: scrollBanner 25s linear infinite;
+    }
+
+    /* New animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s infinite;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icon:hover {
+      transform: scale(1.2);
+      color: #ed532c;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ed532c',
+            secondary: '#d25d41',
+            tertiary: '#fdd7c7'
+          }
+        }
+      }
+    }
+  </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navigation -->
+  <nav class="bg-primary text-white p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="images/logo.JPG" alt="Ekveera Groups Logo" class="h-12 w-auto rounded-lg">
+        </a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Nav Links (Desktop) -->
+      <div id="menu" class="hidden md:flex space-x-6 text-lg">
+        <a href="index.html" class="hover:text-tertiary">Home</a>
+        <a href="#about" class="hover:text-tertiary">About us</a>
+        <a href="#packages" class="hover:text-tertirary">Packages</a>
+        <a href="#services" class="hover:text-tertiary">Services</a>
+        <a href="#team" class="hover:text-tertiary">Team</a>
+        <a href="#contact" class="hover:text-tertiary">Contact us</a>
+      </div>
+    </div>
+
+    <!-- Nav Links (Mobile) -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 px-2">
+      <a href="index.html" class="block hover:text-tertiary">Home</a>
+      <a href="#about" class="block hover:text-tertiary">About us</a>
+      <a href="#packages" class="block hover:text-tertiary">Packages</a>
+      <a href="#services" class="block hover:text-tertiary">Services</a>
+      <a href="#team" class="block hover:text-tertiary">Team</a>
+      <a href="#contact" class="block hover:text-tertiary">Contact us</a>
+    </div>
+  </nav>
+
+  <!-- Continuous Scrolling Banner -->
+  <div class="relative w-full h-64 overflow-hidden">
+    <!-- Images -->
+    <img src="images/eac/medipally_1.jpg" class="fade-image absolute inset-0 w-full lg:object-top lg:h-[360px] h-full object-cover opacity-0 transition-opacity duration-1000" />
+    <img src="images/eac/neelima_1.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/eac/inspection_1.jpg" class="fade-image absolute inset-0 w-full sm:h-[500px] lg:h-[1000px] object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/eac/medipally_2.jpg" class="fade-image absolute inset-0 w-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/eac/airport_1.jpg" class="fade-image absolute inset-0 w-full object-cover h-[500px] object-center opacity-0 transition-opacity duration-1000"> 
+    <img src="images/eac/inspection_2.jpg" class="fade-image absolute inset-0 w-full h-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000"> 
+    <img src="images/eac/medipally_3.jpg" class="fade-image absolute inset-0 w-full h-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000"> 
+    <img src="images/eac/airport_2.jpg" class="fade-image absolute inset-0 w-full h-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000"> 
+    <img src="images/eac/tukkuguda_1.jpeg" class="fade-image absolute inset-0 w-full h-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/eac/medipally_4.jpg" class="fade-image absolute inset-0 w-full h-[600px] lg:h-[800px] object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/eac/medipally_5.jpeg" class="fade-image absolute inset-0 w-full h-full lg:h-[500px] object-center object-cover opacity-0 transition-opacity duration-1000">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-tertiary py-16 rounded-bl-3xl rounded-br-3xl">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-primary mb-4">Ekveera Architects & Constructions</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">Building Strong Foundation for the Future</p>
+    </div>
+  </section>
+
+  <div class="text-center py-10 bg-gray-50">
+    <a href="#services" class="inline-block px-6 py-3 bg-primary text-white text-lg font-semibold rounded-full shadow-md hover:bg-primary-dark transition">
+      Explore Services
+    </a>
+  </div>
+
+  <!-- About Section -->
+<section id="about" class="bg-gray-50 py-16 text-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold text-primary text-left mb-10">About Us</h2>
+
+    <!-- Content -->
+    <div class="bg-gray-50 p-6 rounded-2xl hover:shadow-xl transition-all duration-300">
+      <p class="text-lg leading-relaxed text-left text-gray-800">
+        At <span class="font-semibold text-primary">Ekveera Architects & Constructions</span>, we transform ideas into innovative spaces. With a blend of creative design and expert construction, we craft structures that are not only functional but also inspire.
+        <br><br>
+        Committed to <span class="font-medium">quality, sustainability, and timely delivery</span>, we build with integrity and passion — creating lasting impressions in every project.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Packages Section -->
+
+<section id="packages" class="py-16 bg-gray-50 text-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-primary text-left mb-10">Our Packages</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Basic Package -->
+      <div class="package-card bg-tertiary rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-50" data-package="basic">
+        <div class="bg-gray-50 rounded-xl p-4 mb-4">
+            <h3 class="text-xl font-semibold text-left text-primary mb-2">Basic</h3>
+            <p class="text-2xl font-bold text-secondary">₹1799 per sqft</p>
+        </div>
+        <div class="space-y-4">
+           
+          <!-- Design -->  
+          <div class="feature" data-feature="design">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Design <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Scheme Drawing: </b>All Floors -2d<br>
+                <b>2. Elevation Design: </b>3D<br>
+            </div>
+          </div>
+          <!-- Management -->
+          <div class="feature" data-feature="management">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Project Management <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Site Engineer: </b>One Visit Per Day<br>
+                <b>2. Project Manager: </b>Visit Site Once in a Week<br>
+              </p>
+            </div>
+            </div>  
+
+          <!-- Structure -->
+          <div class="feature" data-feature="structure">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Structure <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Basement Height: </b>Upto 2 feet<br>
+                <b>2. Steel: </b>Shree / Radha TMT or Equivalent<br>
+                <b>3. Solid Blocks: </b>For Partition walls. 6-inch Thick Exterior Walls | 4 Inch Thick Inner Walls<br>
+                <b>4. Cement: </b>Ambuja / KCP<br>
+                <b>5. M Sand: </b>Blockwork & All Masonary Works<br>
+                <b>6. P Sand: </b>Plastering Works<br>
+                <b>7. Concrete Grade: </b>M20 (Manual Mix)<br>
+                <b>8. Ceiling Height: </b>10 Feet<br>
+                <b>9. Parapet wall: </b>3 Feet Height | 4" Thick (only for floor with headroom)<br>
+              </p>
+            </div>
+          </div>
+          <!-- Bathroom & Plumbing -->
+          <div class="feature" data-feature="bathroom">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Bathroom & Plumbing <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wall Tiles:</b> Upto 7' Height. Size 2'x1' Vitrified Tile. Upto ₹40/sqft<br>
+                <b>2. Bath & CP Fittings: </b>Cera | Upto ₹12,000 per Bathroom | Floor Mounted EWC, Wall Mounted Wash Basin, Pillar Tap, Health Fauces, Shower set, 2-in-1 Wall Mixer<br>
+                <b>3. Plumbing Pipes & Fittings: </b>Inner CPVC, Outer PVC. Brands: APL Apollo<br>
+                <b>4. Overhead Tank: </b>1000 Litres Sintex | 3 Layered | UV Protected | White Colour<br>
+              </p>
+            </div>
+        </div>
+        <!-- Flooring -->
+        <div class="feature" data-feature="flooring">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Flooring <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Living, Dining, Bedrooms & Kitchen: </b>2'x2' | Vitrified Tiles Upto ₹45/sqft. Anuj / Sparrow<br>
+                <b>2. Balcony & Utility: </b>Size 1'x1' Upto ₹35/sqft<br>
+                <b>3. StairCase: </b>Size 1'x1' Tile: Upto ₹35/sqft<br>
+                <b>4. Car Parking: </b>1'x1' Parking Tile | Upto ₹35/sqft<br>
+                <b>5. Terrace Flooring: </b>Screed Concreting with Waterproofing<br>
+              </p>
+            </div>
+        </div>
+        <!-- Kitchen & Dining -->
+        <div class="feature" data-feature="kitchen">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Kitchen & Dining <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wall Tile: </b>Vitrified Tile 2'x1' | Upto ₹45/sqft<br>
+                <b>2. Sink Faucet: </b>Upto ₹900 / no.<br>
+                <b>3. Kitchen Sink: </b>Stainless Steel Single Bowl Upto ₹2,800<br>
+                <b>4. Dining: </b>Wall Mounted Wash Basin<br>
+                <b>5. Kitchen Granite Top: </b>Upto ₹90/sqft<br>
+              </p>
+            </div>
+        </div>
+        <!-- Door,Windows and Railing -->
+        <div class="feature" data-feature="doors">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Doors, Windows and Railing <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Main Door: </b>Malaysian Teak Door & Teak Frame | 32mm Thickness | 5"x3" Thick Frame | 7' Height 3.5 Feet Width<br>
+                <b>2. Room Doors: </b>White Panel Door | Sal Wood Frame | 7'x3'<br>
+                <b>3. Bathroom Door: </b>PVC Door | 7'x2.5'<br>
+                <b>4. Windows: </b>Aluminium Sliding Window | Max 4'x4' | One Window Per Room | 5mm Clear Glass<br>
+                <b>5. Staircase Railing: </b>MS Railing<br>
+                <b>6. Balcony Railing: </b>MS Railing<br>
+                <b>7. Window Grills: </b>Standard Design. MS Grill With White Enamel Paint for all Windows<br>
+              </p>
+            </div>
+        </div>
+        <!-- Painting -->
+        <div class="feature" data-feature="painting">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Painting <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Inner Wall Putty: </b>2 Coats of Wall Putty | Any ISI Brand<br>
+                <b>2. Wall Painting: </b>1 Coat of Primer | 2 Coats of Tractor Emulsion | Any ISI Brand<br>
+                <b>3. Ceiling Painting: </b>1 Coat of Primer | 2 Coats of Tractor Emulsion | Any ISI Brand<br>
+                <b>4. Exteior Paint: </b>1 Coat of Primer | 2 Coats of Ace | Any ISI Brand<br>
+              </p>
+            </div>
+        </div>
+        <!-- Electrical -->
+        <div class="feature" data-feature="electrical">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Electrical <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wires: </b>Orbit (FRLS Grade) Fireproof<br>
+                <b>2. Switches: </b>Fybros<br>
+                <b>3. Bedroom: </b>2 Switch Box(8-Module) one at Entrance and one at Bed-side<br>
+                <b>4. Bathroom: </b>1 Switch Box(inner) 4-Module, 1 Switch Box(outer) 3-Module. Point for Heater & Exhaust<br>
+                <b>5. Living Room: </b>Upto 4 Switch (8-Module)<br>
+                <b>6. Dining: </b>1 Switch (8-Module)<br>
+                <b>7. Pooja: </b>1 Switch (3-Module)<br>
+                <b>8. Kitchen: </b>3 Switch Boxes (6-Module). Point for HOB, Chimney, RO<br>
+                <b>9. Utility: </b>1 Switch Box (4-Module)<br>
+                <b>10. AC Points: </b>1 for Each Bedroom<br>
+                <b>11. Entrance: </b>1 Switch Box (6-Module)<br>
+                <b>12. Balconies: </b>1 Switch Box (3-Module)<br>
+              </p>
+            </div>
+        </div>
+        <!-- What's Not Included -->
+        <div class="feature" data-feature="notIncluded">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              What's Not Included <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                1. Compound Wall @ 425/sqft & Gate<br>
+                2. Sump & Septic Tank @22/Litre<br>
+                3. Lift, Lift Pit and Shaft<br>
+                4. Electricity Connectioin<br>
+                5. Building Plan Approval<br>
+                6. Elevation Special Materials<br>
+              </p>
+            </div>
+        </div>
+
+      </div>
+      </div>
+
+      <!-- Standard Package -->
+      <div class="package-card bg-tertiary rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-50" data-package="standard">
+        <div class="bg-gray-50 rounded-xl p-4 mb-4">
+          <h3 class="text-xl font-semibold text-left text-primary mb-2">Standard</h3>
+          <p class="text-2xl font-bold text-secondary">₹1999 per sqft</p>
+      </div>
+        <div class="space-y-4">
+
+         <!-- Design -->
+         <div class="feature" data-feature="design">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Design <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Scheme Drawing: </b>All Floors (2D)<br>
+                <b>2. Elevation Design: </b>3D<br>
+                <b>3. Half Layout: </b>All Floors (3D)<br>
+                <b>4. Electrical Drawing: </b>All Floors (3D)<br>
+                <b>5. Plumbing Drawing: </b>All Floors (2D)<br>
+                <b>6. Working Drawing: </b>All Floors (2D)<br>
+            </p>
+            </div>
+        </div>
+        <!-- Management -->
+        <div class="feature" data-feature="management">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Project Management <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Site Engineer: </b>Dedicated Full-Time Site Engineer<br>
+                <b>2. Project Manager: </b>Two Visits in a Week<br>
+                <b>3. Architect: </b>Support Till Design Completion<br>
+              </p>
+            </div>
+        </div>
+        <!-- Structure -->
+        <div class="feature" data-feature="structure">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Structure <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Basement Height: </b>Upto 3 feet<br>
+                <b>2. Steel: </b>Vizag or Equivalent<br>
+                <b>3. Chamber Bricks: </b>For Partition walls. 9-inch Thick Exterior Walls | 4 Inch Thick Inner Walls<br>
+                <b>4. Cement: </b>Shree / Dalmia<br>
+                <b>5. M Sand: </b>Blockwork & All Masonary Works<br>
+                <b>6. River Sand: </b>Plastering Works<br>
+                <b>7. Concrete Grade: </b>M20 | RMC for Roof<br>
+                <b>8. Ceiling Height: </b>10 Feet<br>
+                <b>9. Parapet wall: </b>3 Feet Height | 6" Thick (only for floor with headroom)<br>
+              </p>
+            </div>
+        </div>
+        <!-- Bathroom & Plumbing -->
+        <div class="feature" data-feature="bathroom">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Bathroom & Plumbing <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wall Tiles:</b> Upto Ceiling (Full Height). Size 2'x2' Vitrified Tile. Upto ₹50/sqft | 1 Color for 2 Bathrooms<br>
+                <b>2. Bath & CP Fittings: </b>Parryware | Upto ₹17,000 per Bathroom | Wall Mounted EWC, Wall Mounted Wash Basin, Pillar Tap, Health Fauces, Shower set, 2-in-1 Wall Mixer<br>
+                <b>3. Plumbing Pipes & Fittings: </b>Inner CPVC, Outer PVC. Brands: APL Apollo<br>
+                <b>4. Overhead Tank: </b>2000 Litres Sintex | 3 Layered | UV Protected | White Colour<br>
+                <b>5. Solar Heater Plumbing Lines: </b>Included (if required)<br>
+              </p>
+            </div>
+        </div>
+        <!-- Flooring -->
+        <div class="feature" data-feature="flooring">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Flooring <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Living, Dining, Bedrooms & Kitchen: </b>2'x2' | Vitrified Tiles | 1 Model for Living, Dining and Kitchen<br>
+                <b>2. Balcony & Utility: </b>Size 2'x2' Upto ₹50/sqft<br>
+                <b>3. StairCase: </b>Granite Upto ₹80/sqft<br>
+                <b>4. Car Parking: </b>1'x1' Heavy Duty Tile | Upto ₹50/sqft<br>
+                <b>5. Terrace Flooring: </b>Screed Concreting with Waterproofing<br>
+              </p>
+            </div>
+        </div>
+        <!-- Kitchen & Dining -->
+        <div class="feature" data-feature="kitchen">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Kitchen & Dining <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wall Tile: </b>Vitrified Tile 2'x2' | Upto ₹55/sqft<br>
+                <b>2. Sink Faucet: </b>Upto ₹2,000 / no.<br>
+                <b>3. Kitchen Sink: </b>Stainless Steel Sink With Drain Upto ₹6,000<br>
+                <b>4. Dining: </b>Wall Mounted Wash Basin<br>
+                <b>5. Kitchen Granite Top: </b>Upto ₹90/sqft<br>
+              </p>
+            </div>
+        </div>
+        <!-- Door,Windows and Railing -->
+        <div class="feature" data-feature="doors">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Doors, Windows and Railing <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Main Door: </b>Malaysian Teak Door & Teak Frame Readymade| 32mm Thickness | 5"x3" Thick Frame | 7' Height 3.5 Feet Width | Upto 32,000/no | 1 no. only included Fixtures and Fitting<br>
+                <b>2. Room Doors: </b>Membrane Door/Flush Door | Sal Wood Frame | 7'x3'<br>
+                <b>3. Bathroom Door: </b>WPC Door | 7'x2.5'<br>
+                <b>4. Windows: </b>UPVC Sliding White| Max 5'x5' | One Window Per Room | 5mm Clear Glass<br>
+                <b>5. Staircase Railing: </b>MS Railing<br>
+                <b>6. Balcony Railing: </b>SS 304 Grade Railing with 8mm Toughened Glass with Posts<br>
+                <b>7. Window Grills: </b>Standard Design. MS Grill With White Enamel Paint for all Windows<br>
+              </p>
+            </div>
+        </div>
+        <!-- Painting -->
+        <div class="feature" data-feature="painting">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Painting <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Inner Wall Putty: </b>2 Coats of Wall Putty | Nippon<br>
+                <b>2. Wall Painting: </b>1 Coat of Primer | 2 Coats of Breeze Emulsion | Nippon <br>
+                <b>3. Ceiling Painting: </b>1 Coat of Primer | 2 Coats of Breeze Emulsion | Nippon<br>
+                <b>4. Exteior Paint: </b>1 Coat of Primer | 2 Coats of Sumo Xtra | Nippon<br>
+                <b>5. Elevation Putty: </b>2 Coats of Putty for Front Elevation | Nippon Exterior Putty<br>
+              </p>
+            </div>
+        </div>
+        <!-- Electrical -->
+        <div class="feature" data-feature="electrical">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Electrical <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wires: </b>Orbit (FRLS Grade) Fireproof<br>
+                <b>2. Switches: </b>Legrand<br>
+                <b>3. Bedroom: </b>3 Switch Boxes (8-Module)<br>
+                <b>4. Bathroom: </b>1 Switch Box(inner) 4-Module, 1 Switch Box(outer) 3-Module. Point for Heater & Exhaust<br>
+                <b>5. Living Room: </b>Upto 4 Switch (8-Module)<br>
+                <b>6. Dining: </b>1 Switch (8-Module)<br>
+                <b>7. Pooja: </b>1 Switch (3-Module)<br>
+                <b>8. Kitchen: </b>3 Switch Boxes (6-Module). Point for HOB, Chimney, RO<br>
+                <b>9. Utility: </b>1 Switch Box (4-Module)<br>
+                <b>10. AC Points: </b>1 for Each Bedroom. 1 for Living Room<br>
+                <b>11. Entrance: </b>1 Switch Box (6-Module)<br>
+                <b>12. Balconies: </b>1 Switch Box (3-Module)<br>
+              </p>
+            </div>
+        </div>
+        <!-- What's Not Included -->
+        <div class="feature" data-feature="notIncluded">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              What's Not Included <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                1. Compound Wall @ 425/sqft & Gate<br>
+                2. Sump & Septic Tank @22/Litre<br>
+                3. Lift, Lift Pit and Shaft<br>
+                4. Electricity Connectioin<br>
+                5. Building Plan Approval<br>
+                6. Elevation Special Materials<br>
+              </p>
+            </div>
+        </div>
+
+      </div>
+      </div>
+
+      <!-- Premium Package -->
+      <div class="package-card bg-tertiary rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-50" data-package="premium">
+        <div class="bg-gray-50 rounded-xl p-4 mb-4">
+          <h3 class="text-xl font-semibold text-left text-primary mb-2">Premium</h3>
+          <p class="text-2xl font-bold text-secondary">₹2399 per sqft</p>
+      </div>
+        <div class="space-y-4">
+            
+            <!-- Design Feature -->
+            <div class="feature" data-feature="design">
+                <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+                  Design <span class="icon text-secondary text-xl">+</span>
+                </button>
+                <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+                  <p class="text-sm text-gray-700 mt-2">
+                    <b>1. Scheme Drawing: </b>All Floors (2D)<br>
+                    <b>2. Elevation Design: </b>3D<br>
+                    <b>3. Half Layout: </b>All Floors (3D)<br>
+                    <b>4. Electrical Drawing: </b>All Floors (2D)<br>
+                    <b>5. Plumbing Drawing: </b>All Floors (2D)<br>
+                    <b>6. Working Drawing: </b>All Floors (2D)<br>
+                    <b>7. Soil Test Report</b><br>
+                    <b>8. Structural Drawings</b><br>
+                    <b>9. Furniture Layout: </b>All Floors (2D)<br>
+                    <b>10. Elevation Detail Drawing: </b>(2D)<br>
+                  </p>
+                </div>
+            </div>
+            <!-- Management Feature -->
+            <div class="feature" data-feature="management">
+                <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+                  Project Management <span class="icon text-secondary text-xl">+</span>
+                </button>
+                <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+                  <p class="text-sm text-gray-700 mt-2">
+                    <b>1. Site Engineer: </b>Dedicated Full-Time Site Engineer<br>
+                    <b>2. Project Manager: </b>Daily Site Visit<br>
+                    <b>3. Architect: </b>Dedicated Architect through-out the Project. Stage wise Site Visit. Material Selection Support<br>
+                  </p>
+                </div>
+            </div>
+            <!-- Structure -->
+          <div class="feature" data-feature="structure">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Structure <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Basement Height: </b>Upto 3.5 feet<br>
+                <b>2. Steel: </b>JSW / Tata or Equivalent<br>
+                <b>3. Wire-Cut Bricks: </b>For Partition walls. 9-inch Thick Exterior Walls | 4 Inch Thick Inner Walls<br>
+                <b>4. Cement: </b>ACC / Ultratech<br>
+                <b>5. M Sand: </b>Blockwork & All Masonary Works<br>
+                <b>6. River Sand: </b>Plastering Works<br>
+                <b>7. Concrete Grade: </b>M20 | RMC for Roof<br>
+                <b>8. Ceiling Height: </b>10.5 Feet<br>
+                <b>9. Parapet wall: </b>3.5 Feet Height | 6" Thick<br>
+                <b>10. Lift Pit & Shaft: </b>Included (if required)<br>
+              </p>
+            </div>
+          </div>
+          <!-- Bathroom & Plumbing -->
+          <div class="feature" data-feature="bathroom">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Bathroom & Plumbing <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wall Tiles:</b> Upto Ceiling (Full Height). Size 4'x2' Vitrified Tile. Upto ₹85/sqft<br>
+                <b>2. Bath & CP Fittings: </b>Jaquar | Upto ₹20,000 per Bathroom | Wall Mounted EWC, Wall Mounted Wash Basin, Pillar Tap, Health Fauces, Shower set, Concealed Wall Mixer<br>
+                <b>3. Plumbing Pipes & Fittings: </b>Inner CPVC, Outer PVC. Brands: Ahirwad / Finolex<br>
+                <b>4. Overhead Tank: </b>3000 Litres Sintex | 5 Layered | UV Protected | White Colour with Sensor<br>
+                <b>5. Solar Heater Plumbing Lines: </b>Included (if required)<br>
+              </p>
+            </div>
+          </div>
+          <!-- Flooring -->
+        <div class="feature" data-feature="flooring">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Flooring <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Living, Dining, Bedrooms & Kitchen: </b>4'x2' Upto ₹120/sqft | Granite or Vitrified Tiles | 1 Model for Living, Dining and Kitchen<br>
+                <b>2. Balcony & Utility: </b>Size 2'x2' Upto ₹60/sqft<br>
+                <b>3. StairCase: </b>Granite Upto ₹90/sqft<br>
+                <b>4. Car Parking: </b>2'x2' Heavy Stone | Upto ₹80/sqft<br>
+                <b>5. Terrace Flooring: </b>Waterproofing and Screed Concreting<br>
+              </p>
+            </div>
+        </div>
+        <!-- Kitchen & Dining -->
+        <div class="feature" data-feature="kitchen">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Kitchen & Dining <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wall Tile: </b>Vitrified Tile 4'x2' | Upto ₹65/sqft<br>
+                <b>2. Sink Faucet: </b>Designer Brand | Upto ₹3,500 / no.<br>
+                <b>3. Kitchen Sink: </b>Quartz Sink With Drain Upto ₹8,000<br>
+                <b>4. Dining: </b>Wash Basin with Granite Conter<br>
+                <b>5. Kitchen Granite Top: </b>Upto ₹95/sqft<br>
+              </p>
+            </div>
+        </div>
+        <!-- Door,Windows and Railing -->
+        <div class="feature" data-feature="doors">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Doors, Windows and Railing <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Main Door: </b>Ghana Teak Door & Teak Frame | 35mm Thickness | 5"x3" Thick Frame | 8' Height 4 Feet Width | Upto 52,000/no | 1 no. only included Fixtures and Fitting<br>
+                <b>2. Room Doors: </b>Flush Door with Laminate | Ghana Wood Frame | 7'x3'<br>
+                <b>3. Bathroom Door: </b>WPC Door | 7'x2.5'<br>
+                <b>4. Windows: </b>UPVC Sliding White| No Restriction on Size and Quantity | 5mm Clear Glass<br>
+                <b>5. Staircase Railing: </b>SS 304 Grade Railing<br>
+                <b>6. Balcony Railing: </b>10mm Full Toughened Glass with 304 Grade<br>
+                <b>7. Window Grills: </b>Standard Design. MS Grill With White Enamel Paint for all Windows<br>
+              </p>
+            </div>
+        </div>
+        <!-- Painting -->
+        <div class="feature" data-feature="painting">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Painting <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Inner Wall Putty: </b>2 Coats of Wall Putty | Birla<br>
+                <b>2. Wall Painting: </b>1 Coat of Primer | 2 Coats of Pro Matex Gold Emulsion | Nippon <br>
+                <b>3. Ceiling Painting: </b>1 Coat of Primer | 2 Coats of Matex Gold Emulsion | Nippon<br>
+                <b>4. Exteior Paint: </b>1 Coat of Primer | 2 Coats of Weather Bond PRO from Nippon<br>
+                <b>5. Elevation Putty: </b>2 Coats of Putty for Two Sides of Elevation | Birla Wallseal Waterproof<br>
+              </p>
+            </div>
+        </div>
+        <!-- Electrical -->
+        <div class="feature" data-feature="electrical">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              Electrical <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                <b>1. Wires: </b>Finolex / Havells (FRLS Grade) Fireproof<br>
+                <b>2. Switches: </b>GM<br>
+                <b>3. </b>No Restriction on Number of Points. Except for Lifts, DG, Curtain Motors, Swimming Pool, RO Plant, Pressure Pump, Intercom, Survelliance System, Exterior Light Points, Gate Automation, Lightening Arrester, Hybrid Solar Heater, Water Fountain, HVAC Systems.<br>
+                <b>4. Electricity Panel Board: </b>Single Service with RLCB - Exterior Grade<br>
+              </p>
+            </div>
+        </div>
+        <!-- What's Not Included -->
+        <div class="feature" data-feature="notIncluded">
+            <button class="feature-toggle w-full flex justify-between items-center font-semibold text-lg text-left">
+              What's Not Included <span class="icon text-secondary text-xl">+</span>
+            </button>
+            <div class="feature-desc overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm text-gray-700 mt-2">
+                1. Compound Wall @ 425/sqft & Gate<br>
+                2. Sump & Septic Tank @22/Litre<br>
+                3. Lift<br>
+                4. Electricity Connectioin<br>
+                5. Building Plan Approval<br>
+                6. Elevation Special Materials<br>
+              </p>
+            </div>
+        </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+  <!-- Services Section -->
+  <section class="bg-gray-50 py-12" id="services">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-primary mb-6">Our Services</h3>
+      <div id="services-accordion" class="space-y-4">
+        
+        <!-- Service Item -->
+        <div class="service-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="service-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Architectural Services
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="service-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Building Planning (as per vasthu)</p>
+            <p class="text-gray-700 py-2">Building 3D Elevations</p>
+            <p class="text-gray-700 py-2">Building Interior Designs</p>
+            <p class="text-gray-700 py-2">Walk Through Videos</p>
+
+          </div>
+        </div>
+  
+        <!-- Structural Designs -->
+        <div class="service-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="service-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Structural Designs
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="service-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">RCC and Steel Structural Designs and Drawings</p>
+          </div>
+        </div>
+
+        <!--Construction Services-->
+        <div class="service-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="service-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Construction Services
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="service-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Building Construction</p>
+            <p class="text-gray-700 py-2">Land Survey</p>
+            <p class="text-gray-700 py-2">Land Development</p>
+            <p class="text-gray-700 py-2">Estimation</p>
+            <p class="text-gray-700 py-2">Soil Testing</p>
+            <p class="text-gray-700 py-2">Material Testing</p>
+            <p class="text-gray-700 py-2">Irrigation Structure</p>
+            <p class="text-gray-700 py-2">All MEP Works</p>
+          </div>
+        </div>
+
+        <!--Municipal Approvals-->
+        <div class="service-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="service-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Municipal Approvals
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="service-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Online Building Permissions (GHMC, HMDA & MUNICIPALITY)</p>
+            <p class="text-gray-700 py-2">TS BPASS Applications</p>
+            <p class="text-gray-700 py-2">Land Use Certificate</p>
+            <p class="text-gray-700 py-2">Layout Plans and Approvals</p>
+          </div>
+        </div>
+
+        <!--Vasthu Consultation Services-->
+        <div class="service-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="service-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Vasthu Constultation Services
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="service-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">Residential Vasthu Consultation</p>
+            <p class="text-gray-700 py-2">Commercial Vasthu Consultation</p>
+            <p class="text-gray-700 py-2">Site Visit and Evaluation</p>
+            <p class="text-gray-700 py-2">Vasthu for Apartment and Villas</p>
+            <p class="text-gray-700 py-2">Temple and Pooja Room Design</p>
+            <p class="text-gray-700 py-2">Vasthu for Interior Design</p>
+            <p class="text-gray-700 py-2">Remote/Online Vasthu Consultation</p>
+            <p class="text-gray-700 py-2">Remedial Vasthu without Demolition</p>
+          </div>
+        </div>
+  
+        <!--Building Consultancy & QA Services-->
+        <div class="service-item border border-gray-300 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="service-toggle w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-lg">
+            Comprehensive Building Consultancy & Quality Assurance Services
+            <span class="icon text-xl text-secondary">+</span>
+          </button>
+          <div class="service-desc max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-700 py-2">House Quality Inspection</p>
+            <p class="text-gray-700 py-2">Structural Assessment and Certification</p>
+            <p class="text-gray-700 py-2">Architectural Design and Consultation</p>
+            <p class="text-gray-700 py-2">MEP (Mechanical / Electrical / Plumbing) Coordination</p>
+            <p class="text-gray-700 py-2">Renovation and Retrofitting Advisory</p>
+            <p class="text-gray-700 py-2">Construction Stagewise Monitoring</p>
+            <p class="text-gray-700 py-2">Project Management Support</p>
+            <p class="text-gray-700 py-2">Legal and Technical Documentation</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+<!-- Team section-->
+ <section id="team" class="bg-gray-50 py-16 text-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold text-primary text-left mb-10">Our Team</h2>
+
+    <!-- Team Grid -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/managing director.png" alt="P Anil" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Podeti Anil</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech, M.Tech, (PhD), MIE MIFERP</p>
+        <p class="text-sm text-gray-700 mt-1">Structural Engineer</p>
+        <p class="text-sm font-medium text-secondary">10+ Years Experience</p>
+      </div>
+
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/Keshav Kulkarni.jpeg" alt="Keshav K" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Keshav Kulkarni</h3>
+        <p class="text-sm font-medium text-secondary">B. Arch</p>
+        <p class="text-sm text-gray-700 mt-1">Architectural Engineer</p>
+        <p class="text-sm font-medium text-secondary">20+ Years Experience</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/Sai Kumar.jpeg" alt="Sai Kumar" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Sai Kumar</h3>
+        <p class="text-sm font-medium text-secondary">BTech, MTech</p>
+        <p class="text-sm text-gray-700 mt-1">Design Engineer</p>
+        <p class="text-sm font-medium text-secondary">5+ Years Experience</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/venu.jpg" alt="Venu" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Venu</h3>
+        <p class="text-sm font-medium text-secondary">BTech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Project Manager</p>
+        <p class="text-sm font-medium text-secondary">5+ Years Experience</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/P Suman.jpeg" alt="P Suman" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Podeti Suman</h3>
+        <p class="text-sm font-medium text-secondary">P.G [H.R]</p>
+        <p class="text-sm text-gray-700 mt-1">HR Manager</p>
+        <p class="text-sm font-medium text-secondary">10+ Years Experience</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/rajesh.jpg" alt="Rajesh" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Matla Rajesh</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Design Engineer</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/Jaleel.jpg" alt="Jaleel" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Jaleel</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Design Engineer</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/chandu.jpg" alt="Chandu" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">M Chandu</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Junior Engineer</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/charan teja.jpg" alt="Charan" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">M Charan Teja</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Site Engineer</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/praveen.jpg" alt="Praveen" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Ch Praveen</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Site Engineer</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/sai kiran.jpg" alt="Sai Kiran" class="w-32 h-32 mx-auto rounded-full object-cover object-top mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">M Sai Kiran</h3>
+        <p class="text-sm font-medium text-secondary">B.Tech [Civil]</p>
+        <p class="text-sm text-gray-700 mt-1">Site Engineer</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/bhaskar_cropped.jpg" alt="Bhaskar" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Akula Bhaskar</h3>
+        <p class="text-sm font-medium text-secondary">ITI</p>
+        <p class="text-sm text-gray-700 mt-1">Senior Electrician</p>
+      </div>
+
+      <!-- Team Member -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+        <img src="images/teamPics/eac/umesh.png" alt="Umesh" class="w-32 h-32 mx-auto rounded-full object-center object-cover mb-4 shadow">
+        <h3 class="text-xl font-bold text-primary mb-1">Umesh Tela</h3>
+        <p class="text-sm text-gray-700 mt-1">Digital Marketing Executive</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact us section -->
+<section id="contact" class="bg-gray-50 py-16 text-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-primary mb-10">Contact Us</h2>
+
+    <!-- Infomation Cards -->
+    <div class="space-y-4">
+      <!-- Address -->
+       <a href="#maps_g">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">location_on</span>
+          <div>
+            <p class="font-semibold text-lg">Address</p>
+            <p class="text-sm text-gray-700">
+              2nd Floor, Jyothi Arcade, 7-168/7, above the Muthoot Finance,<br />
+              Ghatkesar, Telangana 501301
+            </p>
+          </div>
+        </div>
+       </a>
+
+      <!-- Email -->
+       <a href="mailto:ekveeragroups@gmail.com" class="block" target="_blank">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">email</span>
+          <div>
+            <p class="font-semibold text-lg">Email</p>
+            <p class="text-sm text-gray-700">ekveeragroups@gmail.com</p>
+          </div>
+        </div>
+       </a>
+
+      <!-- Phone -->
+       <a href="tel:+919939290303" class="block">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">phone</span>
+          <div>
+            <p class="font-semibold text-lg">Phone</p>
+            <p class="text-sm text-gray-700">+91 9939 29 0303</p>
+          </div>
+        </div>
+       </a>
+      
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/919939290303" target="_blank" class="block">
+        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+          <span class="material-icons text-primary text-3xl">message</span>
+          <div>
+            <p class="font-semibold text-lg">WhatsApp</p>
+            <p class="text-sm text-gray-700">+91 9939 29 0303</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Google Map -->
+    <div class="w-full h-72 rounded-2xl overflow-hidden shadow-lg mt-10" id="maps_g">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.546993033974!2d78.67968506956086!3d17.450714998965452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb766d5fd5089d%3A0x8ade150426e94856!2sS.V.%20ACADEMY!5e0!3m2!1sen!2sin!4v1744252357421!5m2!1sen!2sin"
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!--Social Media Handles-->
+  <div class="text-center mt-12">
+    <p class="text-lg font-medium text-gray-800 mb-4">Stay updated — follow us online</p>
+   <div class="flex justify-center space-x-6">
+     <!-- Instagram -->
+     <a href="https://www.instagram.com/s.v.academy_sohamvisionacademy" target="_blank" rel="noopener noreferrer">
+       <img src="images/icons/instagram.svg" alt="Instagram" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+
+     <!-- YouTube -->
+     <a href="https://www.youtube.com/@ekveeragroups" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons/youtube.svg" alt="YouTube" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+
+    <!-- Facebook -->
+     <a href="https://www.facebook.com/share/18puJSgvJr/" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons/facebook.svg" alt="Facebook" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+   </div>
+  </div>
+
+
+</section>
+
+  
+  <!-- Footer -->
+<footer class="bg-primary text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Logo & About -->
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Ekveera Groups</h2>
+        <p class="text-sm">
+          Training engineers. Designing dreams. Delivering quality construction.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-tertiary">About Us</a></li>
+          <li><a href="#team" class="hover:text-tertiary">Our Team</a></li>
+          <li><a href="#contact" class="hover:text-tertiary">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Contact</h3>
+        <ul class="text-sm space-y-2">
+          <li>📍 2nd Floor, Jyothi Arcade, 7-168/7, above the Muthoot Finance, Ghatkesar, Telangana 501301</li>
+          <li>📞 +91 9939 29 0303 / +91 96426 99 426</li>
+          <li>📧 ekveeragroups@gmail.com</li>
+          <li>💬 WhatsApp: +91 9939 29 0303</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Bottom bar -->
+    <div class="bg-secondary text-center py-4 text-sm">
+      © 2025 Ekveera Groups. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="eac.js"></script>
+</body>
+</html>

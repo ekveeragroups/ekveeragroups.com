@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <link rel="icon" href="images/fav_icon.png", type="images/png" > 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ekveera Groups is a trusted construction consutancy company based in Ghatkesar, Hyderabad. We deliver quality projects with on-time completion."/>
+  <title>Ekveera Groups | Construction Consultancy and Academy</title>
+
+  <!-- Load Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    @keyframes scrollBanner {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  
+    .animate-scrollBanner {
+      animation: scrollBanner 25s linear infinite;
+    }
+
+    /* New animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s infinite;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icon:hover {
+      transform: scale(1.2);
+      color: #ed532c;
+    }
+  </style>
+
+  <!-- Then override Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ed532c',
+            secondary: '#d25d41',
+            tertiary: '#fdd7c7'
+          }
+        }
+      }
+    }
+  </script>
+
+  <meta property="og:title" content="Ekveera Groups | Construction Consultancy & Academy in Ghatkesar, Hyderabad" />
+  <meta property="og:description" content="Leading construction consultancy & Academy in Ghatkesar, Hyderabad. Trusted for quality and timely delivery." />
+  <meta property="og:url" content="https://ekveeragroups.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https:ekveeragroups.com/" /> 
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    
+  <!-- Navigation -->
+  <nav class="bg-primary text-white p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="#" class="flex items-center">
+          <img src="images/logo.JPG" alt="Ekveera Groups Logo" class="h-12 w-auto rounded-lg">
+        </a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Nav Links (Desktop) -->
+      <div id="menu" class="hidden md:flex space-x-6 text-lg">
+        <a href="#about" class="hover:text-tertiary">About us</a>
+        <a href="#team" class="hover:text-tertiary">Team</a>
+        <a href="#contact" class="hover:text-tertiary">Contact us</a>
+      </div>
+    </div>
+
+    <!-- Nav Links (Mobile) -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 px-2">
+      <a href="#about" class="block hover:text-tertiary">About us</a>
+      <a href="#team" class="block hover:text-tertiary">Team</a>
+      <a href="#contact" class="block hover:text-tertiary">Contact us</a>
+    </div>
+  </nav>
+
+   <!-- Continuous Scrolling Banner -->
+   <div class="relative w-full h-64 overflow-hidden">
+    <!-- Images -->
+    <img src="images/home/image_4.JPG" class="fade-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" /> 
+    <img src="images/home/medipally_1.jpg" class="fade-image absolute inset-0 w-full h-[500px] object-cover object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/home/sva_1.jpg" class="fade-image absolute inset-0 w-full h-[500px] object-cover object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/home/medipally_2.jpg" class="fade-image absolute inset-0 w-full lg:object-center lg:h-[800px] object-cover opacity-0 transition-opacity duration-1000"> 
+    <img src="images/home/airport_1.jpg" class="fade-image absolute inset-0 w-full h-[500px] object-cover object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/home/image_1.jpg" class="fade-image absolute inset-0 w-full h-full object-cover object-center object-cover opacity-0 transition-opacity duration-1000">
+    <img src="images/home/sva_wgl_1.jpg" class="fade-image absolute inset-0 w-full h-[500px] object-cover object-center object-cover opacity-0 transition-opacity duration-1000">
+  </div>
+
+  <!-- About Section -->
+<section id="about" class="py-16 bg-tertiary text-gray-900 rounded-bl-3xl rounded-br-3xl ">
+      <!-- Company name text-->
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Heading -->
+        <h1 class="text-3xl font-bold text-primary text-left mb-10">Ekveera Groups</h1>
+  
+      <!-- Our Units Section -->
+      <div class="flex flex-col md:flex-row justify-center gap-6">
+        <!-- Unit 1 -->
+        <a href="eac.html" class="block bg-white hover:bg-gray-100 rounded-2xl shadow-md p-6 w-full md:w-1/2 text-center transition duration-300 hover-scale">
+          <h4 class="text-xl font-semibold text-primary">Ekveera Architects & Constructions</h4>
+          <p class="text-gray-700 mt-2">Innovative designs and quality constructions</p>
+        </a>
+  
+        <!-- Unit 2 -->
+        <a href="sva.html" class="block bg-white hover:bg-gray-100 rounded-2xl shadow-md p-6 w-full md:w-1/2 text-center transition duration-300 hover-scale">
+          <h4 class="text-xl font-semibold text-primary">Soham Vision Academy</h4>
+          <p class="text-gray-700 mt-2">Skill-building platform for a smarter, stronger workforce</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About us Section --> 
+  <section class="py-16 bg-gray-50 text-gray-900">
+      <div class="transition-all duration-300 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-primary mb-10 text-left">About us</h2>
+        <p class="text-lg leading-relaxed text-left text-gray-800">
+          At <span class="text-primary font-semibold">Ekveera Groups</span> we are dedicated to excellence and innovation fostering growth across diverse sectors. With a commitment to <span class="text-primary font-semibold">quality, sustainability and empowerment</span> we aim to make a lasting impact by delivering exceptional solutions that inspire and drive success. Our passion for building a brighter future is at the heart of everything we do.
+      </div>
+  </section>
+  
+  <!-- Team Section -->
+<section id="team" class="py-16 bg-gray-50 text-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-primary mb-12 text-left">The Visionaries</h2>
+
+    <div class="grid gap-12 grid-cols-1 sm:grid-cols-2">
+      <!-- Team Member 1 -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 shadow-xl text-center hover:scale-105 transition-all duration-300">
+        <img src="images/teamPics/chairperson.png" alt="Team Member" class="w-40 h-40 mx-auto rounded-full object-cover mb-6 border-4 border-primary">
+        <h4 class="text-2xl font-semibold text-primary">Kotari Nandini Chandravathi</h4>
+        <p class="text-gray-500 text-base">B.Tech, M.Tech, (PhD), MIE</p>
+        <p class="text-gray-700 mt-1 text-lg">Chairperson</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 shadow-xl text-center hover:scale-105 transition-all duration-300">
+        <img src="images/teamPics/managing director.png" alt="Team Member" class="w-40 h-40 mx-auto rounded-full object-cover mb-6 border-4 border-primary">
+        <h4 class="text-2xl font-semibold text-primary">Anil Podeti</h4>
+        <p class="text-gray-500 text-base">B.Tech, M.Tech, (PhD), MIE MIFERP</p>
+        <p class="text-gray-700 mt-1 text-lg">Managing Director</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Contact us section -->
+  <section id="contact" class="bg-gray-50 py-16 text-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-primary mb-10">Contact Us</h2>
+  
+      <!-- Infomation Cards -->
+      <div class="space-y-4">
+        <!-- Address -->
+         <a href="#maps_g">
+          <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+            <span class="material-icons text-primary text-3xl">location_on</span>
+            <div>
+              <p class="font-semibold text-lg">Address</p>
+              <p class="text-sm text-gray-700">
+                2nd Floor, Jyothi Arcade, 7-168/7, above the Muthoot Finance,<br />
+                Ghatkesar, Telangana 501301
+              </p>
+            </div>
+          </div>
+         </a>
+  
+        <!-- Email -->
+         <a href="mailto:ekveeragroups@gmail.com" class="block" target="_blank">
+          <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+            <span class="material-icons text-primary text-3xl">email</span>
+            <div>
+              <p class="font-semibold text-lg">Email</p>
+              <p class="text-sm text-gray-700">ekveeragroups@gmail.com</p>
+            </div>
+          </div>
+         </a>
+  
+        <!-- Phone -->
+         <a href="tel:+919939290303" class="block">
+          <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+            <span class="material-icons text-primary text-3xl">phone</span>
+            <div>
+              <p class="font-semibold text-lg">Phone</p>
+              <p class="text-sm text-gray-700">+91 9939 29 0303</p>
+            </div>
+          </div>
+         </a>
+        
+  
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919939290303" target="_blank" class="block">
+          <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300">
+            <span class="material-icons text-primary text-3xl">message</span>
+            <div>
+              <p class="font-semibold text-lg">WhatsApp</p>
+              <p class="text-sm text-gray-700">+91 9939 29 0303</p>
+            </div>
+          </div>
+        </a>
+  
+      </div>
+  
+      <!-- Google Map -->
+      <div class="w-full h-72 rounded-2xl overflow-hidden shadow-lg mt-10" id="maps_g">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.546993033974!2d78.67968506956086!3d17.450714998965452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb766d5fd5089d%3A0x8ade150426e94856!2sS.V.%20ACADEMY!5e0!3m2!1sen!2sin!4v1744252357421!5m2!1sen!2sin"
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <!--Social Media Handles-->
+    <div class="text-center mt-12">
+    <p class="text-lg font-medium text-gray-800 mb-4">Stay updated — follow us online</p>
+   <div class="flex justify-center space-x-6">
+     <!-- Instagram -->
+     <a href="https://www.instagram.com/s.v.academy_sohamvisionacademy" target="_blank" rel="noopener noreferrer">
+       <img src="images/icons/instagram.svg" alt="Instagram" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+
+     <!-- YouTube -->
+     <a href="https://www.youtube.com/@ekveeragroups" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons/youtube.svg" alt="YouTube" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+
+    <!-- Facebook -->
+     <a href="https://www.facebook.com/share/18puJSgvJr/" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons/facebook.svg" alt="Facebook" class="w-8 h-8 hover:opacity-75 transition">
+     </a>
+   </div>
+  </div>
+    
+
+  </section>
+
+
+  
+  <!-- Footer -->
+<footer class="bg-primary text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Logo & About -->
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Ekveera Groups</h2>
+        <p class="text-sm">
+          Training engineers. Designing dreams. Delivering quality construction.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-tertiary">About Us</a></li>
+          <li><a href="#team" class="hover:text-tertiary">Our Team</a></li>
+          <li><a href="#contact" class="hover:text-tertiary">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Contact</h3>
+        <ul class="text-sm space-y-2">
+          <li>📍 2nd Floor, Jyothi Arcade, 7-168/7, above the Muthoot Finance, Ghatkesar, Telangana 501301</li>
+          <li>📞 +91 9939 29 0303 / +91 96426 99 426</li>
+          <li>📧 ekveeragroups@gmail.com</li>
+          <li>💬 WhatsApp: +91 9939 29 0303</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Bottom bar -->
+    <div class="bg-secondary text-center py-4 text-sm">
+      © 2025 Ekveera Groups. All rights reserved.
+    </div>
+  </footer>
+  
+      
+  <script src="main.js"></script>
+</body>
+</html>
